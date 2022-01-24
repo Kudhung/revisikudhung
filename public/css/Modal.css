@@ -1,0 +1,303 @@
+.main{
+  display:flex;
+}
+#overlay, #overlay-produk   {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: 0%;
+  background-color: rgba(4, 0, 0, 0.804);
+  cursor: context-menu;
+}
+#overlay-produk {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: 0%;
+  background-color: rgba(4, 0, 0, 0.804);
+  cursor: context-menu;
+}
+#overlay-slider {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: 0%;
+  background-color: rgba(4, 0, 0, 0.804);
+  cursor: context-menu;
+}
+#overlay-kategori, #overlay-kategoriSlider {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: 0%;
+  background-color: rgba(4, 0, 0, 0.804);
+  cursor: context-menu;
+}
+#overlay-kategori-delete, #overlay-kategoriSlider-delete {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: 0%;
+  background-color: rgba(4, 0, 0, 0.804);
+  cursor: context-menu;
+}
+.modal{
+  pointer-events:none;
+  text-align: center;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 0;
+  margin: auto 100px;
+  padding: 100px auto;
+  display: none;
+  color: black;
+  z-index: 9999;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+  animation: slide_up 1.4s ease;
+}
+.modal .header{
+  width: 100%;
+  height: min-content;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+.modal .header p{
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.modal .header .close{
+  font-size: 24px;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  margin-right: 5px;
+}
+.modal .header .close i:hover{
+  border-radius: 50%;
+  color: white;
+}
+.modal .body{
+  margin-top:20px;
+}
+.modal .body img{
+  max-width:70%;
+}
+
+@keyframes slide_up{
+  0%{
+    transform: translateY(500px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+.grid-container {
+  width: 75%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  margin-left: 13%;
+  padding: 5px;
+  text-align:center;
+}
+
+.grid-container > div {
+  background-color:whitesmoke;
+  text-align: center;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+
+/* Set a style for all buttons */
+.button__config {
+  background-color: #04AA6D;
+  color: white;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.button__config:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.541), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.button__config:active {
+    transform: translateY(4px);
+  }
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: center;
+  width: 25%;
+  margin-left: 5%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+
+
+/* Style the horizontal ruler */
+.hr__config {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title-modal{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.content-modal{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 0%;
+  color: black;
+}
+
+.title-modal22{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.content-modal22{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 0%;
+  color: black;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-2 {
+    margin-left: 20px;
+  }
+  .title-modal22{
+    font-size: 22px;
+  }
+  
+  .content-modal22{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-bottom: 60px;
+    margin-left: 20px;
+  }
+  .title-modal22{
+    font-size: 20px;
+  }
+  
+  .content-modal22{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+  .u-section-1 .u-btn-2 {
+    margin-bottom: 60px;
+    margin-left: 20px;
+  }
+  .title-modal22{
+    font-size: 18px;
+  }
+  
+  .content-modal22{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .button__config {
+    width: 50% ;
+    margin-top: 0%;
+  }
+  .judul-ktg{
+    font-size: 25px;
+  }
+  .modal .header .judul-bundling{
+    font-size: 25px;
+  }
+  .title-modal22{
+    font-size: 18px;
+  }
+  
+  .content-modal22{
+    font-size: 16px;
+  }
+  .cancelbtn, .deletebtn {
+    float: center;
+    width: 24%;
+    margin-left: 5%;
+    font-size: 20px;
+  }
+  .modal .header p{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
+}
+

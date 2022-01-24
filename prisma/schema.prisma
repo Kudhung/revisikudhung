@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+provider = "postgresql"
+url = env("DATABASE_URL")
+}
+
+model Kategori {
+  idKtg     Int    @id @default(autoincrement())
+  jenisKtg  String @unique
+  gambarKtg String
+}
+
+model Produk {
+  idProduk          Int    @id @default(autoincrement())
+  namaProduk        String @unique
+  jenisKain         String
+  hargaProduk       String
+  hargaSale         String
+  deskripsiProduk   String
+  statusProduk      String
+  gambar1Produk     String
+  keteranganGambar1 String
+  gambar2Produk     String
+  keteranganGambar2 String
+  kategoriProduk    String
+  tepiProduk        String
+  ukuranProduk      String
+}
+
+model Bundling {
+  idBundling        Int    @id @default(autoincrement())
+  namaBundling      String @unique
+  gambar1Bundling   String
+  keteranganGambar1 String
+  gambar2Bundling   String
+  keteranganGambar2 String
+  hargaBundling     String
+  DeskripsiBundling String
+}
+
+model Slider {
+  idSlider         Int    @id @default(autoincrement())
+  gambarSlider     String
+  keteranganSlider String
+  periodeSlider    String
+  statusSlider     String
+  kategoriSlider   String
+}

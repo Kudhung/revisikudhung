@@ -1,0 +1,64 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 610px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.5rem;
+  margin: 22px 57px 58px;
+}
+
+.hamburger-respon{
+  margin-left: 150%;
+}
+
+/* Responsive 2 */
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .nav-respon{
+    margin-left: 11.3%;
+  }
+
+  .nav-respon li {
+    width: 19.6%;
+  }
+
+  .li-respon-2{
+    margin: -10%;
+  }
+}
+
+/* Responsive  3 */
+@media (max-width: 991px) {
+  .hamburger-respon{
+    margin-left: 310%;
+  }
+}
+
+/* Responsive 4 */
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    margin-top: 60px;
+  }
+
+  .hamburger-respon{
+    margin-left: 500%;
+  }
+}
+
+/* Responsive 5 */
+@media (max-width: 575px) {
+
+  .hamburger-respon{
+    margin-left: 350%;
+  }
+  
+}

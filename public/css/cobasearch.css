@@ -1,0 +1,36 @@
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    margin-top: 25%;
+    float: right;
+    margin-bottom: 2%;
+    position: absolute;
+    z-index: 8;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #myTable tbody {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tbody.header, #myTable tbody:hover {
+    background-color: #f1f1f1;
+  }
+
+  #myTable a {
+    color: black;
+  }
+
+  .hover-search:hover{
+    display: block;
+    background-color: rgb(174, 174, 174);
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
