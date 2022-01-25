@@ -136,7 +136,7 @@ const Footer = () => (
                 </div>
                 <p className="u-align-center u-small-text u-text u-text-variant u-text-14">Kudhung&nbsp;
 
-                    ©&nbsp; 2021</p>
+                    ©&nbsp; 2022</p>
             </div>
         </footer>
     </>
